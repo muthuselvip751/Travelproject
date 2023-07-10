@@ -1,57 +1,238 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="utf-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <title>Travel project</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-  <link rel="stylesheet" href="style.css">
-  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>travelsite</title>
+     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+
 </head>
 <body>
 
-  <!--------------------------------------- header------------------------------------ -->
-  <header>
-    <a href="#" class="brand">Travel</a>
-    <div class="menu-btn"></div>
-    <div class="navigation">
-      <div class="navigation-items">
-        <a href="#">Home</a>
-        <a href="#">About</a>
-        <a href="#">Explore</a>
-        <a href="#">Gallery</a>
-        <a href="#">Contact</a>
-      </div>
-    </div>
-  </header>
+<!-------------------------------------header-------------------------------------------------->
+<header class="header">
 
-  <!--------------------------------home section --------------------------------->
-  <section class="home">
+    <a href="#" class="logo"><span>MS</span>travel</a>
+
+    <nav class="navbar">
+        <a href="#home">home</a>
+        <a href="#service">service</a>
+        <a href="#about">about</a>
+        <a href="#gallery">gallery</a>
+        <a href="#package">package</a>
+        <a href="#review">reivew</a>
+        <a href="#book">book</a>
+    </nav>
+
+    <div id="menu-bars" class="fas fa-bars"></div>
+
+</header>
+<!------------------------HOME----------------------------------------------------------------------->
+<section class="home" id="home">
+
     <div class="content">
-      <h1>Wonderful.<br><span>Island</span></h1>
-      <p>mncfjwenfcjwenvcfhrdvjkndsssssssssssssssujhndvjnekvjbkmvbfmfdlmvdfkmbcmuityajklHFRUEJ
-        mncfjwenfcjwenvcfhrdvjkndsssssssssssssssujhndvjnekvjbkmvbfmfdlmvdfkmbcmuityajmncfjwenfcj
-        wenvcfhrdvjkndsssssssssssssssujhndvjnekvjbkmvbfmfdlmvdfkmbcmuityajKAGHUASMFNDE</p>
-      <a href="#">Read more</a>
+        <h3>“Adventures are the best way to learn.”<span>MStravel..</span></h3>
+        <a href="#book" class="btn">book us</a>
     </div>
-    <div class="media-icons">
-      <a href="#"><i class="fab fa-facebook-f"></i></a>
-      <a href="#"><i class="fab fa-instagram"></i></a>
-      <a href="#"><i class="fab fa-twitter"></i></a>
+
+    <div class="swiper-container home-slider">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide"><img src="assets/slide-1.jpg" alt=""></div>
+            <div class="swiper-slide"><img src="assets/slide-2.jpg" alt=""></div>
+            <div class="swiper-slide"><img src="assets/slide-3.jpg" alt=""></div>
+            <div class="swiper-slide"><img src="assets/slide-4.jpg" alt=""></div>
+            <div class="swiper-slide"><img src="assets/slide-5.jpg" alt=""></div>
+            <div class="swiper-slide"><img src="assets/slide-6.jpg" alt=""></div>
+        </div>
     </div>
-  </section>
-<!--------------------------------------------------------------------------------------------------->
-<script type="text/Javascript">
-  const menubtn=document.queryselector(".menu btn");
-  const navigation=document.queryselector(".menu-btn");
+
+</section>
+<!--------------------Service-------------------------------------------------------------------------->
+<section class="service" id="service">
+
+    <h1 class="heading"> our <span>services</span> </h1>
+
+    <div class="box-container">
+
+        <div class="box">
+            <i class="fas fa-map-marker-alt"></i>
+            <h3>place selection</h3>
+            <p>
+                A tourist destination is a city, town, or other area that is significantly dependent on revenues from tourism, or "a country, state, region, city, or
+         town which is marketed or markets itself as a place for tourists to visit".</p>
+        </div>
+
+        <div class="box">
+            <i class="fa fa-solid fa-car"></i>
+            <h3>transport</h3>
+            <p>
+                For long-distance transportation, rail freight is the most 
+            environment-friendly mode of transport. Rail transport is also relatively fast.</p>
+        </div>
+
+        <div class="box">
+            <i class="fas fa-music"></i>
+            <h3>entertainment</h3>
+            <p>An expense incurred by an employee while he/she is
+                traveling for business purposes or entertaining a business client. </p>
+        </div>
+
+        <div class="box">
+            <i class="fas fa-utensils"></i>
+            <h3>food and drinks</h3>
+            <p>The foods and drinks we put into our bodies are our fuel. They provide us with energy and nutrients—like vitamins, minerals,
+     and proteins—that our bodies need to function and thrive. .</p>
+        </div>
+
+        <div class="box">
+            <i class="fas fa-photo-video"></i>
+            <h3>photos and videos</h3>
+            <p>Choose a travel video template. Choose from Vimeo Create's library of professionally designed travel
+     video templates that are ready for you to customize.</p>
+        </div>
+
+        <div class="box">
+            <i class="fas fa-birthday-cake"></i>
+            <h3>custom food</h3>
+            <p>Dry or packaged foods: Most germs require moisture to grow, so foods that are dry, 
+    such as potato chips, are usually safe.</p>
+        </div>
+
+    </div>
+
+</section> 
+<!-----------------------About---------------------------------------------------------------------------------->
+
+<section class="about" id="about">
+
+    <h1 class="heading"><span>about</span> us</h1>
+    <div class="row">
+
+        <div class="image">
+            <img src="assets/about-img.jpg" alt="">
+        </div>
+        
+        <div class="content">
+
+            <h3>MStravel is the name of travel technology solution.</h3>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolorem obcaecati ex tempora asperiores nihil atque dolores quam voluptatum beatae sequi.Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem, illo unde ullam molestias possimus perferendis adipisci libero laboriosam accusamus voluptates iusto quod eos amet explicabo est recusandae? Exercitationem, tenetur illum.</p>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sit impedit tempore debitis vitae. Quisquam eum, tempora quis ipsum temporibus beatae non quo exercitationem. Commodi eligendi tempore sed, a quas eum!</p>
+           <a href="#" class="btn">contact us</a>
+        </div>
+
+    </div>
+
+</section>
+<!-----------------------------Gallery-------------------------------------------------------------->
+<section class="gallery" id="gallery">
+
+    <h1 class="heading">our <span>gallery</span></h1>
+
+    <div class="box-container">
+
+        <div class="box">
+            <img src="assets/g-1.jpg" alt="">
+            <h3 class="title">MS gallery</h3>
+            <div class="icons">
+                <a href="#" class="fas fa-heart"></a>
+                <a href="#" class="fas fa-share"></a>
+                <a href="#" class="fas fa-eye"></a>
+            </div>
+        </div>
+
+        <div class="box">
+            <img src="assets/g-2.jpg" alt="">
+            <h3 class="title">MS gallery</h3>
+            <div class="icons">
+                <a href="#" class="fas fa-heart"></a>
+                <a href="#" class="fas fa-share"></a>
+                <a href="#" class="fas fa-eye"></a>
+            </div>
+        </div>
+
+        <div class="box">
+            <img src="assets/g-3.jpg" alt="">
+            <h3 class="title">MS gallery</h3>
+            <div class="icons">
+                <a href="#" class="fas fa-heart"></a>
+                <a href="#" class="fas fa-share"></a>
+                <a href="#" class="fas fa-eye"></a>
+            </div>
+        </div>
+
+        <div class="box">
+            <img src="assets/g-4.jpg" alt="">
+            <h3 class="title">MS gallery</h3>
+            <div class="icons">
+                <a href="#" class="fas fa-heart"></a>
+                <a href="#" class="fas fa-share"></a>
+                <a href="#" class="fas fa-eye"></a>
+            </div>
+        </div>
+
+        <div class="box">
+            <img src="assets/g-5.jpg" alt="">
+            <h3 class="title">MS gallery</h3>
+            <div class="icons">
+                <a href="#" class="fas fa-heart"></a>
+                <a href="#" class="fas fa-share"></a>
+                <a href="#" class="fas fa-eye"></a>
+            </div>
+        </div>
+
+        <div class="box">
+            <img src="assets/g-6.jpg" alt="">
+            <h3 class="title">MS gallery</h3>
+            <div class="icons">
+                <a href="#" class="fas fa-heart"></a>
+                <a href="#" class="fas fa-share"></a>
+                <a href="#" class="fas fa-eye"></a>
+            </div>
+        </div>
+
+        <div class="box">
+            <img src="assets/g-7.jpg" alt="">
+            <h3 class="title">MS gallery</h3>
+            <div class="icons">
+                <a href="#" class="fas fa-heart"></a>
+                <a href="#" class="fas fa-share"></a>
+                <a href="#" class="fas fa-eye"></a>
+            </div>
+        </div>
+
+        <div class="box">
+            <img src="assets/g-8.jpg" alt="">
+            <h3 class="title">MS gallery</h3>
+            <div class="icons">
+                <a href="#" class="fas fa-heart"></a>
+                <a href="#" class="fas fa-share"></a>
+                <a href="#" class="fas fa-eye"></a>
+            </div>
+        </div>
+
+        <div class="box">
+            <img src="assets/g-9.jpg" alt="">
+            <h3 class="title">MS gallery</h3>
+            <div class="icons">
+                <a href="#" class="fas fa-heart"></a>
+                <a href="#" class="fas fa-share"></a>
+                <a href="#" class="fas fa-eye"></a>
+            </div>
+        </div>
+
+    </div>
+
+</section>
 
 
-  menuBtn.addEventListener("list", () => {
-    menuBtn.classList.toggle("active");
-  });
-  </script>
 
 
+
+
+
+<!-------------------------------------------------------------------------------------------------->
 </body>
-</html>
+    </html>
