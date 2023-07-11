@@ -329,3 +329,43 @@ section{
     text-align: center;
     margin-top: 2rem;
  }
+
+ /* --------------------------------------------------review-------------------------------------------------- */
+ .cliendreviews .box{
+    border-radius: .5rem;
+    background: #333;
+    padding: 2rem;
+    position: relative;
+ }
+ /* .creviews.box .fa-quote-right{
+    position: absolute;
+    top: 2rem; right: 2rem;
+    color: var(--main-color);
+    font-size: 5rem;
+ } */
+ .cliendreviews .box .user{
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+    padding-bottom: 15rem;
+ }
+ .cliendreviews .box .user img{
+    height: 13rem;
+    width: 13rem;
+    border-radius: 50%;
+    object-fit: cover;
+ }
+  .cliendreviews .box .user h3{
+    font-size: 2rem;
+    color: #fff;
+ }
+ .cliendreviews .box .user span{
+    font-size: 1.5rem;
+    color: #eee;
+ } 
+ .cliendreviews .box p{
+    line-height: 2;
+    color: #eee;
+    padding: .5rem 0;
+    font-size: 1.6rem;
+ }
