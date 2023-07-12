@@ -90,6 +90,7 @@ section{
     font-size: 1.7rem;
     color:#fff;
     margin-left: 2rem;
+    font-weight:bold;
 }
 
 .header .navbar a:hover{
@@ -320,11 +321,13 @@ section{
     width: 100%;
     object-fit: cover;
     transition: .2s linear;
+
  }
  
  .package .box-container .box .content{
     padding:2rem;
     text-align: center;
+    
  }
  
  .package .box-container .box .content h3{
@@ -369,7 +372,7 @@ section{
     object-fit: cover;
  }
   .cliendreviews .box .user h3{
-    font-size: 2rem;
+    font-size: 3rem;
     color: #050505;
  }
  .cliendreviews .box .user span{
