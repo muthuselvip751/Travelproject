@@ -46,11 +46,6 @@ section{
     text-transform: uppercase;
     font-size: 4rem;
 }
-.heading span{
-    color:#3867d6;
-    text-transform: uppercase;
-}
-
 .btn{
     margin-top: 1rem;
     display: inline-block;
@@ -73,7 +68,7 @@ section{
     left: 0;
     right: 0;
     z-index: 10000;
-    background: #333;
+    background: #08a865;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -88,6 +83,7 @@ section{
 
 .header .logo span{
     color:#3867d6;
+    /* border:2ps solid red; */
 }
 
 .header .navbar a{
@@ -121,7 +117,7 @@ section{
 }
 
 .home .content h3 span{
-    color:var(--main-color);
+    color:#3867d6;
     text-transform: uppercase;
 }
 
@@ -173,6 +169,12 @@ section{
     color:#eee;
     line-height: 1.8;
 }
+.service .heading span{
+    /* border:2px solid red; */
+    color:blue;
+}
+
+
 /* ---------------------------about-------------------------------------------------- */
 .about .row{
     display: flex;
@@ -203,12 +205,21 @@ section{
     padding: 1rem 0;
     line-height: 2;
 }
+.about .heading span{
+    /* border:2px solid red; */
+    color:blue;
+}
+
 /* --------------------------------------GALLERY------------------------------------------ */
 .gallery .box-container{
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(27rem, 1fr));
     gap:1.5rem;
 
+}
+.gallery .heading span{
+    /* border:2px solid red; */
+    color:blue;
 }
 .gallery .box-container .box{
     position: relative;
@@ -281,7 +292,10 @@ section{
     background: #fff;
     display: none;
  }
- 
+ .package .heading span{
+    /* border:2px solid red; */
+    color:blue;
+}
  .package .box-container .box:nth-child(1),
  .package .box-container .box:nth-child(2),
  .package .box-container .box:nth-child(3),
@@ -337,12 +351,11 @@ section{
     padding: 2rem;
     position: relative;
  }
- /* .creviews.box .fa-quote-right{
-    position: absolute;
-    top: 2rem; right: 2rem;
-    color: var(--main-color);
-    font-size: 5rem;
- } */
+ .cliendreviews .heading span{
+    /* border:2px solid red; */
+    color:blue;
+}
+
  .cliendreviews .box .user{
     display: flex;
     align-items: center;
@@ -357,7 +370,7 @@ section{
  }
   .cliendreviews .box .user h3{
     font-size: 2rem;
-    color: #fff;
+    color: #050505;
  }
  .cliendreviews .box .user span{
     font-size: 1.5rem;
@@ -369,3 +382,52 @@ section{
     padding: .5rem 0;
     font-size: 1.6rem;
  }
+
+ /* ---------------------------------------------- book form----------------------------------------- */
+ .book .heading-title{
+    color: #08fdf1;
+    text-align: center;
+    font-size: 3rem;
+ }
+ .book .heading span{
+    /* border:2px solid red; */
+    color:blue;
+}
+ .book .book-form{
+    padding: 2rem;
+    background: gray;
+ }
+ .book .book-form .flex{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+ }
+ .book .book-form .flex .inputBox{
+    flex: 1 1 41rem;
+ }
+ .book .book-form .flex .inputBox input{
+    width: 100%;
+    padding: 1.2rem 1.4rem;
+    font-size: 1.6rem;
+    color: light black;
+    text-transform: none;
+    margin-top: 1.5rem;
+    border: var(--border);
+ }
+ .book .book-form .flex .inputBox input:focus{
+    background: black;
+    color: white;
+ }
+ .book .book-form .flex .inputBox input:focus::placeholder{
+    color: light white;
+ }
+ .book .book-form .flex .inputBox span{
+    font-size: 1.5rem;
+    color: light black;
+    font-weight:bold;
+ }
+ .book .book-form .btn{
+    margin-top: 2rem;
+ }
+
+ 

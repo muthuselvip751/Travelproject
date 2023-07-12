@@ -34,7 +34,7 @@
 <section class="home" id="home">
 
     <div class="content">
-        <h3>“Adventures are the best way to learn.”<span>MStravel..</span></h3>
+        <h3>Explore the best place around  the world</h3>
         <a href="#book" class="btn">book us</a>
     </div>
 
@@ -117,10 +117,15 @@
         
         <div class="content">
 
-            <h3>MStravel is the name of travel technology solution.</h3>
-            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolorem obcaecati ex tempora asperiores nihil atque dolores quam voluptatum beatae sequi.Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem, illo unde ullam molestias possimus perferendis adipisci libero laboriosam accusamus voluptates iusto quod eos amet explicabo est recusandae? Exercitationem, tenetur illum.</p>
-            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sit impedit tempore debitis vitae. Quisquam eum, tempora quis ipsum temporibus beatae non quo exercitationem. Commodi eligendi tempore sed, a quas eum!</p>
-           <a href="#" class="btn">contact us</a>
+            <h3>Changing how the world travels</h3>
+            <p>We’re on a journey to transform ordinary trips into extraordinary ones. 
+We are your guide, bringing you personal experiences. Wherever your travels take you, we’ll show you 
+the unique and unmissable things to do in your destination. With GetYourGuide on your side 
+(and in your pocket), creating memorable moments has never been easier. Today, millions have used
+ GetYourGuide to turn their travel dreams into reality. And we’re just getting started. We're changing
+ the way people connect to the places they visit so anyone can create their dream vacation. 
+ It’s your journey, your way.</p>
+  <a href="#" class="btn">contact us</a>
         </div>
 
     </div>
@@ -345,7 +350,7 @@
             <div class="content">
                 <h3>Varkala</h3>
                 <p>Varkala is a town in the south Indian state of Kerala. 
-                    It’s on the Arabian Sea and known for Varkala Beach, backed by palm-covered red cliffs.</p>
+                    It's on the Arabian Sea and known for Varkala Beach, backed by palm-covered red cliffs.</p>
                 <a href="#book" class="btn">book now</a>
             </div>
         </div>
@@ -450,11 +455,57 @@
     </div>
  
  </section>
-<!------------------------------------------------------------------------------------------------->
+<!-------------------book form------------------------------------------------------------------------------>
+<section class="book" id="book">
+    <div class="heading" style="background: url(assets/header-bg-3.png) no-repeat">
+        <h1 class="heading"> book<span>now</span> </h1>
+        </div>
+
+        <h1 class="heading-title">book your trip!</h1>
+        <form action="book_form.php" method="post" class="book-form">
+          
+            <div class="flex">
+                <div class="inputBox">
+                    <span>name :</span>
+                    <input type="text" placeholder="enter your name" name="name">
+                </div>
+                <div class="inputBox">
+                    <span>email :</span>
+                    <input type="email" placeholder="enter your email" name="email">
+                </div>
+                <div class="inputBox">
+                    <span>phone :</span>
+                    <input type="number" placeholder="enter your number" name="phone">
+                </div>
+                <div class="inputBox">
+                    <span>address :</span>
+                    <input type="text" placeholder="enter your address" name="address">
+                </div>
+                <div class="inputBox">
+                    <span>where to :</span>
+                    <input type="text" placeholder="place you want to visit" name="location">
+                </div>
+                <div class="inputBox">
+                    <span>how many :</span>
+                    <input type="number" placeholder="number of guests" name="guests">
+                </div>
+                <div class="inputBox">
+                    <span>arrivals :</span>
+                    <input type="date" placeholder="arriving" name="arrivals">
+                </div>
+                <div class="inputBox">
+                    <span>leaving :</span>
+                    <input type="date" placeholder="leaving date"  name="leaving">
+                </div>
+            </div>
+
+            <input type="submit" value="submit" class="btn" name="send">
+
+        </form>
+
+   </section>
 
 
-
-
-
+<!-------------------------------------------------------------------------------------------------------->
 </body>
     </html>
