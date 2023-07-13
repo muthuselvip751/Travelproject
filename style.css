@@ -46,6 +46,7 @@ section{
     text-transform: uppercase;
     font-size: 4rem;
 }
+
 .btn{
     margin-top: 1rem;
     display: inline-block;
@@ -278,7 +279,7 @@ section{
     /* border:2px solid red; */
     font-size: 3rem;
     text-align: center;
-    color:#6e6868;
+    color:#031925;
  }
 
 .package .box-container{
@@ -387,10 +388,19 @@ section{
  }
 
  /* ---------------------------------------------- book form----------------------------------------- */
+ .book .heading{
+    /* border:2px solid red; */
+    background: url(assets/header-bg-2.png) no-repeat;
+    padding:0;
+    
+ }
+ 
  .book .heading-title{
-    color: #08fdf1;
+    color: #0821fd;
     text-align: center;
     font-size: 3rem;
+    /* border:2px solid black; */
+    background-color:lightgray;
  }
  .book .heading span{
     /* border:2px solid red; */
@@ -483,3 +493,67 @@ section{
     color:#3867d6;
     font-weight:bold;
 }
+
+
+/*------------------------------------------ theme toggle---------------------------------------------- */
+
+.theme-toggler{
+    position:fixed;
+    top:10rem;
+    right:-20rem;
+    background:#333;
+    z-index:1000;
+    width:20rem;
+    text-align:center;
+}
+.theme-toggler .active{
+    right:0px;
+    left:10px;
+}
+.theme-toggle h3{
+    color:#fff;
+    padding:1 rem 0;
+    font-size:2rem;
+}
+.theme-toggler .buttons{
+    display:flex;
+    justify-content:center;
+    flex-wrap:wrap;
+    gap:1rem;
+    padding:1rem;
+}
+.theme-toggler .buttons .theme-btn{
+    height:5rem;
+    width:5rem;
+    border-radius:50%;
+    cursor:pointer;
+    }
+.theme-toggler .toggle-btn{
+    position:absolute;
+    top:0;
+    left:-5.9rem;
+    padding:1.3rem 1.5rem;
+    background:#333;
+    cursor:pointer;
+}
+.theme-toggler .toggle-btn i{
+    color:#fff;
+    font-size:3rem;
+    animation:spin 4s linear infinites;
+}
+
+
+
+
+@keyframes spin{
+    0%{
+        transform:rotate(360deg);
+    }
+}
+
+
+
+
+/* media queries */
+
+
