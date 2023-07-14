@@ -7,7 +7,45 @@ menu.onclick=() =>{
     navbar.classList.toggle('active');
 }
 
+// ====================================theme toggle===============================================
 
+let themeToggler=document.querySelector('.theme-toggler');
+let toggleBtn=document.querySelector('.toggle-btn');
+
+toggleBtn.onClick=()=>{
+    themeToggler.classList.toggler('active');
+}
+
+window.onscroll=()=>{
+    menu.classList.remove('fa-times');
+    navbar.classList.remove('active');
+    themeToggler.classList.remove('active');
+}
+
+document.querySelectorAll('.theme-toggler .theme-btn').forEach(btn =>{
+    
+    btn.onclick=() =>{
+        let color=btn.style.background;
+        document.querySelector(':root').style.setProperty('##3867d6',color);
+    }
+});
+
+// =====================================images loadmore=================================================
+
+let loadMoreBtn=document.querySelector('package .loadmore .btn');
+let currentitem=3;
+
+loadMoreBtn.onclick=() =>{
+    let boxes=[document.querySelectorAll('.package .box-container .box')];
+     for(var i=currentItem; i<currentItem+3;i++){
+        boxes[i].style.display='inline-block';
+
+     };
+     currentItem+=3;
+     if(currentItem>=boxes.length){
+        loadMoreBtn.style.display='none';
+     }
+}
 
 // =========================================home slider============================================
 var swipper =new swipper (".home-slider", {
