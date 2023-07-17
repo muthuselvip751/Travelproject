@@ -52,7 +52,7 @@ var swiper = new Swiper(".home-slider", {
   }
 });
 
-// =========================================iimg loadmore=========================================
+// =========================================img loadmore=========================================
 let loadMoreBtn = document.querySelector('.package .load-more .btn');
 let currentItem = 3;
 
