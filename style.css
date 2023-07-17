@@ -162,7 +162,7 @@ section{
     border-radius: 50%;
     font-size: 2.5rem;
     background:#20ddeb;
-    color:#fff;
+    color:#ffffff;
 }
 
 .service .box-container .box h3{
@@ -172,8 +172,8 @@ section{
 }
 
 .service .box-container .box p{
-    font-size: 1.4rem;
-    color:#eee;
+    font-size: 1.5rem;
+    color:#ffffff;
     line-height: 1.8;
 }
 /* .service .heading span{
@@ -208,7 +208,7 @@ section{
 }
 .about .row .content p{
     font-size: 1.5rem;
-    color: #817878;
+    color:black;
     padding: 1rem 0;
     line-height: 2;
 }
@@ -342,8 +342,8 @@ section{
  }
  
  .package .box-container .box .content p{
-    font-size: 1.5rem;
-    color:#777;
+    font-size: 1.7rem;
+    color:black;
     line-height: 2;
     padding:1rem 0;
  }
@@ -393,9 +393,9 @@ section{
  } 
  .cliendreviews .box p{
     line-height: 2;
-    color: #eee;
+    color: #ffffff;
     padding: .5rem 0;
-    font-size: 1.6rem;
+    font-size: 1.8rem;
  }
 
  /* ---------------------------------------------- book form----------------------------------------- */
@@ -457,7 +457,7 @@ section{
  /* -----------------------------footer------------------------------------------------------------- */
 
  .footer{
-    background:#111;
+    background:#030303;
 }
 
 .footer .box-container{
@@ -469,30 +469,33 @@ section{
 .footer .box-container .box h3{
     font-size: 2.5rem;
     padding:1rem 0;
-    color:#fff;
+    color:#ffffff;
 }
 
 .footer .box-container .box a{
     display: block;
-    font-size: 1.5rem;
+    font-size: 1.8rem;
     padding:1rem 0;
-    color:#eee;
+    color:white;
+   
 }
 
 .footer .box-container .box a i{
     padding-right: .5rem;
      color:#3867d6;
+     
 }
 
 .footer .box-container .box a:hover i{
     padding-right: 1.5rem;
-    color:#fff;
+    color:#ffffff;
+   
 }
 
 .footer .credit{
     text-align: center;
     border-top: .1rem solid #222;
-    color:#fff;
+    color:#ffffff;
     padding:2rem;
     padding-top: 2.5rem;
     margin-top: 1rem;

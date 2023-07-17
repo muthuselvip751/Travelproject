@@ -1,7 +1,8 @@
-let menu = document.querySelector('#menu-bars');
-let navbar = document.querySelector('.navbar');
+<?php
+$databaseHost = 'localhost';
+$databaseName = 'book_form';
+$databaseUsername = 'gr';
+$databasePassword = 'Test#123';
 
-menu.onclick = () =>{
-  menu.classList.toggle('fa-times');
-  navbar.classList.toggle('active');
-}
+$conn = mysqli_connect($databaseHost, $databaseUsername, $databasePassword, $databaseName);
+  ?>
