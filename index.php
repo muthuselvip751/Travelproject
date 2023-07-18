@@ -296,7 +296,7 @@ the unique and unmissable things to do in your destination.</p>
                 <a href="#book" class="btn">book now</a>
             </div>
         </div>
-    
+     
         <div class="box">
             <div class="image">
                 <img src="assets/Everest.jpg" alt="">

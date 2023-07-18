@@ -24,9 +24,9 @@ if(isset($_POST['send'])){
     $leaving = $_POST['leaving'];
 
 
-    $request = "insert into tripform(name, email, phone, address,location,guests,arrivals,leaving) values('$name','$email','$phone','$address','$location','$guests','$arrivals','$leaving')";
-    echo $request;
-    exit;
+    $request = "insert into bookform(name, email, phone, address,location,guests,arrivals,leaving) values('$name','$email','$phone','$address','$location','$guests','$arrivals','$leaving')";
+    // echo $request;
+    // exit;
     mysqli_query($connection,$request);
 
     header('location:index.php');
