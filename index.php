@@ -488,7 +488,9 @@ the unique and unmissable things to do in your destination.</p>
             </div>
 
             <h1 class="heading-title">book your trip!</h1>
-            <form action="book_form.php" method="post" class="book-form">
+            <!-- <form action="book_form.php" method="post" class="book-form"> -->
+            <form id="bookForm" action="book_form.php" method="post" class="book-form" 
+            onsubmit="return validateForm()">
               
                 <div class="flex">
                     <div class="inputBox">
@@ -616,6 +618,20 @@ the unique and unmissable things to do in your destination.</p>
 
   
   <script src="script.js"></script>
+
+
+  <script>
+  function validateForm() {
+    var name = document.forms["bookForm"]["name"].value;
+    var email = document.forms["bookForm"]["email"].value;
+    var phone = document.forms["bookForm"]["phone"].value;
+    var address = document.forms["bookForm"]["address"].value;
+    var location = document.forms["bookForm"]["location"].value;
+    var guests = document.forms["bookForm"]["guests"].value;
+    var arrivals = document.forms["bookForm"]["arrivals"].value;
+    var leaving = document.forms["bookForm"]["leaving"].value;
+  }
+  </script>
 </body>
 </html>
 
