@@ -4,29 +4,18 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<<<<<<< HEAD
-    <title>travelsite</title>
-     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
-=======
     <title>Travel site</title>
 
     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
 
->>>>>>> travelsite/main
     <link rel="stylesheet" href="style.css">
 
 </head>
 <body>
-<<<<<<< HEAD
-
-<!-------------------------------------header-------------------------------------------------->
-=======
     
 <!--=================================================header section=========================================--->
 
->>>>>>> travelsite/main
 <header class="header">
 
     <a href="#" class="logo"><span>MS</span>travel</a>
@@ -37,20 +26,6 @@
         <a href="#about">about</a>
         <a href="#gallery">gallery</a>
         <a href="#package">package</a>
-<<<<<<< HEAD
-        <a href="#review">review</a>
-        <a href="#book">book</a>
-    </nav>
-
-    <div id="menu-bars" class="fa fa-bars"></div>
-
-</header>
-<!------------------------HOME----------------------------------------------------------------------->
-<section class="home" id="home">
-
-    <div class="content">
-        <h3>Explore the best place around  the world</h3>
-=======
         <a href="#review">reivew</a>
         <a href="#book">book</a>
     </nav>
@@ -67,7 +42,6 @@
 
     <div class="content">
         <h3>“Explore the best place around  the world”<span>MStravel..</span></h3>
->>>>>>> travelsite/main
         <a href="#book" class="btn">book us</a>
     </div>
 
@@ -83,17 +57,12 @@
     </div>
 
 </section>
-<<<<<<< HEAD
-<!--------------------Service-------------------------------------------------------------------------->
-<section class="service" id="service">
-=======
 
   
 
    <!--===============================================service section starts============================--->
 
    <section class="service" id="service">
->>>>>>> travelsite/main
 
     <h1 class="heading"> our <span>services</span> </h1>
 
@@ -102,25 +71,14 @@
         <div class="box">
             <i class="fas fa-map-marker-alt"></i>
             <h3>place selection</h3>
-<<<<<<< HEAD
-            <p>
-                A tourist destination is a city, town, or other area that is significantly dependent on revenues from tourism, or "a country, state, region, city, or
-         town which is marketed or markets itself as a place for tourists to visit".</p>
-=======
             <p>A tourist destination is a city, town, or other area that is significantly dependent on revenues from tourism, or "a country, state, region, city, or
          town which is marketed or markets itself as a place for tourists to visit"</p>
->>>>>>> travelsite/main
         </div>
 
         <div class="box">
             <i class="fa fa-solid fa-car"></i>
             <h3>transport</h3>
-<<<<<<< HEAD
-            <p>
-                For long-distance transportation, rail freight is the most 
-=======
             <p> For long-distance transportation, rail freight is the most 
->>>>>>> travelsite/main
             environment-friendly mode of transport. Rail transport is also relatively fast.</p>
         </div>
 
@@ -135,11 +93,7 @@
             <i class="fas fa-utensils"></i>
             <h3>food and drinks</h3>
             <p>The foods and drinks we put into our bodies are our fuel. They provide us with energy and nutrients—like vitamins, minerals,
-<<<<<<< HEAD
-     and proteins—that our bodies need to function and thrive. .</p>
-=======
      and proteins—that our bodies need to function and thrive.</p>
->>>>>>> travelsite/main
         </div>
 
         <div class="box">
@@ -158,37 +112,6 @@
 
     </div>
 
-<<<<<<< HEAD
-</section> 
-<!-----------------------About---------------------------------------------------------------------------------->
-
-<section class="about" id="about">
-
-    <h1 class="heading"><span>about</span> us</h1>
-    <div class="row">
-
-        <div class="image">
-            <img src="assets/about-img.jpg" alt="">
-        </div>
-        
-        <div class="content">
-
-            <h3>Changing how the world travels</h3>
-            <p>We're on a journey to transform ordinary trips into extraordinary ones. 
-We are your guide, bringing you personal experiences. Wherever your travels take you, we'll show you 
-the unique and unmissable things to do in your destination. With GetYourGuide on your side 
-(and in your pocket), creating memorable moments has never been easier. Today, millions have used
- GetYourGuide to turn their travel dreams into reality. And we're just getting started. We're changing
- the way people connect to the places they visit so anyone can create their dream vacation. 
- It's your journey, your way.</p>
-  <a href="#" class="btn">contact us</a>
-        </div>
-
-    </div>
-
-</section>
-<!-----------------------------Gallery-------------------------------------------------------------->
-=======
 </section>
 
 
@@ -224,7 +147,6 @@ the unique and unmissable things to do in your destination.</p>
 
     <!---===========================================gallery section=====================================--->
 
->>>>>>> travelsite/main
 <section class="gallery" id="gallery">
 
     <h1 class="heading">our <span>gallery</span></h1>
@@ -232,11 +154,7 @@ the unique and unmissable things to do in your destination.</p>
     <div class="box-container">
 
         <div class="box">
-<<<<<<< HEAD
-            <img src="assets/img1.jpg" alt="">
-=======
         <img src="assets/img1.jpg" alt="">
->>>>>>> travelsite/main
             <h3 class="title">MS gallery</h3>
             <div class="icons">
                 <a href="#" class="fas fa-heart"></a>
@@ -246,11 +164,7 @@ the unique and unmissable things to do in your destination.</p>
         </div>
 
         <div class="box">
-<<<<<<< HEAD
-            <img src="assets/img2.jpg" alt="">
-=======
         <img src="assets/img2.jpg" alt="">
->>>>>>> travelsite/main
             <h3 class="title">MS gallery</h3>
             <div class="icons">
                 <a href="#" class="fas fa-heart"></a>
@@ -260,11 +174,7 @@ the unique and unmissable things to do in your destination.</p>
         </div>
 
         <div class="box">
-<<<<<<< HEAD
-            <img src="assets/img3.jpg" alt="">
-=======
         <img src="assets/img3.jpg" alt="">
->>>>>>> travelsite/main
             <h3 class="title">MS gallery</h3>
             <div class="icons">
                 <a href="#" class="fas fa-heart"></a>
@@ -274,11 +184,7 @@ the unique and unmissable things to do in your destination.</p>
         </div>
 
         <div class="box">
-<<<<<<< HEAD
-            <img src="assets/img4.jpg" alt="">
-=======
         <img src="assets/img4.jpg" alt="">
->>>>>>> travelsite/main
             <h3 class="title">MS gallery</h3>
             <div class="icons">
                 <a href="#" class="fas fa-heart"></a>
@@ -288,11 +194,7 @@ the unique and unmissable things to do in your destination.</p>
         </div>
 
         <div class="box">
-<<<<<<< HEAD
-            <img src="assets/img5.jpg" alt="">
-=======
         <img src="assets/img5.jpg" alt="">
->>>>>>> travelsite/main
             <h3 class="title">MS gallery</h3>
             <div class="icons">
                 <a href="#" class="fas fa-heart"></a>
@@ -302,11 +204,7 @@ the unique and unmissable things to do in your destination.</p>
         </div>
 
         <div class="box">
-<<<<<<< HEAD
-            <img src="assets/img6.jpg" alt="">
-=======
         <img src="assets/img6.jpg" alt="">
->>>>>>> travelsite/main
             <h3 class="title">MS gallery</h3>
             <div class="icons">
                 <a href="#" class="fas fa-heart"></a>
@@ -316,11 +214,7 @@ the unique and unmissable things to do in your destination.</p>
         </div>
 
         <div class="box">
-<<<<<<< HEAD
-            <img src="assets/img7.jpg" alt="">
-=======
         <img src="assets/img7.jpg" alt="">
->>>>>>> travelsite/main
             <h3 class="title">MS gallery</h3>
             <div class="icons">
                 <a href="#" class="fas fa-heart"></a>
@@ -330,11 +224,7 @@ the unique and unmissable things to do in your destination.</p>
         </div>
 
         <div class="box">
-<<<<<<< HEAD
-            <img src="assets/img8.jpg" alt="">
-=======
         <img src="assets/img8.jpg" alt="">>
->>>>>>> travelsite/main
             <h3 class="title">MS gallery</h3>
             <div class="icons">
                 <a href="#" class="fas fa-heart"></a>
@@ -344,11 +234,7 @@ the unique and unmissable things to do in your destination.</p>
         </div>
 
         <div class="box">
-<<<<<<< HEAD
-            <img src="assets/img9.jpg" alt="">
-=======
         <img src="assets/img9.jpg" alt="">
->>>>>>> travelsite/main
             <h3 class="title">MS gallery</h3>
             <div class="icons">
                 <a href="#" class="fas fa-heart"></a>
@@ -360,33 +246,6 @@ the unique and unmissable things to do in your destination.</p>
     </div>
 
 </section>
-<<<<<<< HEAD
-<!-------------------pakage section------------------------------------------------------------------------------->
-
-<section class="package" id="package">
-
-    <div class="heading" style="background: url(assets/header-bg-2.png) no-repeat">
-    <h1 class="heading"> our<span> package</span></h1>
-    </div>
-    
-    <h1 class="heading-title">select your destinations</h1>
-    
-    <div class="box-container">
-    
-        <div class="box">
-            <div class="image">
-                <img src="assets/Tajmahal.jpg" alt="">
-            </div>
-            <div class="content">
-                <h3> Taj Mahal,Agra</h3>
-        <p>The Taj Mahal is one of the seven wonders 
-            of the world and is considered to be the most popular tourist attraction in India.</p>
-                <a href="#book" class="btn">book now</a>
-            </div>
-        </div>
-    
-        <div class="box">
-=======
 
 
 
@@ -415,7 +274,6 @@ the unique and unmissable things to do in your destination.</p>
     </div>
 
     <div class="box">
->>>>>>> travelsite/main
             <div class="image">
                 <img src="assets/Maldives.jpg" alt="">
             </div>
@@ -438,7 +296,7 @@ the unique and unmissable things to do in your destination.</p>
                 <a href="#book" class="btn">book now</a>
             </div>
         </div>
-    
+     
         <div class="box">
             <div class="image">
                 <img src="assets/Everest.jpg" alt="">
@@ -480,11 +338,7 @@ the unique and unmissable things to do in your destination.</p>
 
         <div class="box">
             <div class="image">
-<<<<<<< HEAD
-                <img src="assets/Dubai.jpg" alt="">
-=======
                 <img src="assets/dupai.jpg" alt="">
->>>>>>> travelsite/main
             </div>
             <div class="content">
                 <h3>Dubai</h3>
@@ -559,124 +413,6 @@ the unique and unmissable things to do in your destination.</p>
         </div>
     </div>
     
-<<<<<<< HEAD
-    <div class="load-more"><span class="btn">load more...</span></div>
-    
-    </section>
-<!------------------Review---------------------------------------------------------------------------------------------------->
-
-
-<section class="cliendreviews" id="review">
-
-    <h1 class="heading">client's <span>review</span></h1>
-    <div class="review-slider swiper-container">
-      <div class="swiper-wrapper">
- 
-         <div class="swiper-slide box">
-             <div class="user">
-                 <img src="assets/pic1 .jpg" alt="">
-                 <div class="user-info">
-                     <h3>Christy</h3>
-                     <span>happy client</span>
-                 </div>
-             </div>
-             <p>Thank you so much for your help in organising our India trip. We had an absolutely 
-                fantastic time, helped by your companies amazing organisation and all your great staff.
-                We saw tigers, Hindu festivals, Kanchenjunga, Darjeeling tea plantations and all the sites of Delhi.
-                Hope the above is of help to you.</p>
-         </div>
- 
-         <div class="swiper-slide box">
-             <div class="user">
-                 <img src="assets/pic2.jpg" alt="">
-                 <div class="user-info">
-                     <h3>Ria</h3>
-                     <span>happy client</span>
-                 </div>
-             </div>
-             <p>Thank you so much for your help in organising our India trip. We had an absolutely 
-                fantastic time,helped by your companies amazing organization and all your great staff. 
-                We Saw tiger,Hindu festivals,Kanchenjunga,Darjeeling tea platation and all the sites of Delhi.
-                Hope the above is of help to you</p>
- 
-         <div class="swiper-slide box">
-             <div class="user">
-                 <img src="assets/pic3.jpg" alt="">
-                 <div class="user-info">
-                     <h3>John</h3>
-                     <span>happy client</span>
-                 </div>
-             </div>
-             <p>Thank you so much for your help in organising our India trip.We had an absolutely
-                fantastic time,helped by your companies amazing organization and all your great staff.
-                We Saw tiger,Hindu festivals,Kanchenjunga,Darjeeling tea platation and all the sites of Delhi.
-               Hope the above is of help to you </p>
-            </div>
-      </div>
- 
-    </div>
- 
- </section>
-<!-------------------book form------------------------------------------------------------------------------>
-<section class="book" id="book">
-    <div class="heading">
-        <h1 class="heading"> book<span>now</span> </h1>
-        </div>
-
-        <h1 class="heading-title">book your trip!</h1>
-        <form action="book_form.php" method="post" class="book-form">
-          
-            <div class="flex">
-                <div class="inputBox">
-                    <span>name :</span>
-                    <input type="text" placeholder="enter your name" name="name">
-                </div>
-                <div class="inputBox">
-                    <span>email :</span>
-                    <input type="email" placeholder="enter your email" name="email">
-                </div>
-                <div class="inputBox">
-                    <span>phone :</span>
-                    <input type="number" placeholder="enter your number" name="phone">
-                </div>
-                <div class="inputBox">
-                    <span>address :</span>
-                    <input type="text" placeholder="enter your address" name="address">
-                </div>
-                <div class="inputBox">
-                    <span>where to :</span>
-                    <input type="text" placeholder="place you want to visit" name="location">
-                </div>
-                <div class="inputBox">
-                    <span>how many :</span>
-                    <input type="number" placeholder="number of guests" name="guests">
-                </div>
-                <div class="inputBox">
-                    <span>arrivals :</span>
-                    <input type="date" placeholder="arriving" name="arrivals">
-                </div>
-                <div class="inputBox">
-                    <span>leaving :</span>
-                    <input type="date" placeholder="leaving date"  name="leaving">
-                </div>
-            </div>
-
-            <input type="submit" value="submit" class="btn" name="send">
-
-        </form>
-
-   </section>
-
-
-<!--------------------------------------Footer----------------------------------------------------------------->
-<section class="footer">
-
-    <div class="box-container">
-
-        <div class="box">
-            <h3>branches</h3>
-            <a href="#"> <i class="fas fa-map-marker-alt"></i> india </a>
-=======
 
 <div class="load-more"><span class="btn">load more...</span></div>
 
@@ -752,7 +488,9 @@ the unique and unmissable things to do in your destination.</p>
             </div>
 
             <h1 class="heading-title">book your trip!</h1>
-            <form action="book_form.php" method="post" class="book-form">
+            <!-- <form action="book_form.php" method="post" class="book-form"> -->
+            <form id="bookForm" action="book_form.php" method="post" class="book-form" 
+            onsubmit="return validateForm()">
               
                 <div class="flex">
                     <div class="inputBox">
@@ -805,85 +543,11 @@ the unique and unmissable things to do in your destination.</p>
                 <div class="box">
                     <h3>branches</h3>
                     <a href="#"> <i class="fas fa-map-marker-alt"></i> india </a>
->>>>>>> travelsite/main
             <a href="#"> <i class="fas fa-map-marker-alt"></i> newyork </a>
             <a href="#"> <i class="fas fa-map-marker-alt"></i>canada </a>
             <a href="#"> <i class="fas fa-map-marker-alt"></i> uk </a>
             <a href="#"> <i class="fas fa-map-marker-alt"></i> german </a>
             <a href="#"> <i class="fas fa-map-marker-alt"></i> switzerland </a>
-<<<<<<< HEAD
-        </div>
-
-        <div class="box">
-            <h3>quick links</h3>
-            <a href="#home"> <i class="fas fa-arrow-right"></i> home </a>
-            <a href="#service"> <i class="fas fa-arrow-right"></i> service </a>
-            <a href="#about"> <i class="fas fa-arrow-right"></i> about </a>
-            <a href="#gallery"> <i class="fas fa-arrow-right"></i> gallery </a>
-            <a href="#package"> <i class="fas fa-arrow-right"></i> package </a>
-            <a href="#review"> <i class="fas fa-arrow-right"></i> review </a>
-            <a href="#book"> <i class="fas fa-arrow-right"></i> book </a>
-        </div>
-
- 
-        <div class="box">
-            <h3>contact info</h3>
-            <a href="#"> <i class="fas fa-phone"></i> +9854842759267 </a>
-            <a href="#"> <i class="fas fa-phone"></i> +9680923470935</a>
-            <a href="#"> <i class="fas fa-envelope"></i> mstravel@gmail.com </a>
-            <a href="#"> <i class="fas fa-envelope"></i> mstravel@gmail.com </a>
-            <a href="#"> <i class="fas fa-map-marker-alt"></i> tamilnadu, india </a>
-        </div>
-
-        <div class="box">
-            <h3>follow us</h3>
-            <a href="#"> <i class="fab fa-facebook-f"></i> facebook </a>
-            <a href="#"> <i class="fab fa-twitter"></i> twitter </a>
-            <a href="#"> <i class="fab fa-instagram"></i> instagram </a>
-            <a href="#"> <i class="fab fa-linkedin"></i> linkedin </a>
-        </div>
-
-    </div>
-
-    <div class="credit"> created by <span>MS TRAVEL</span> | all rights reserved 2023 </div>
-
-</section>
-<!----------------------------------------theme toggle--------------------------------------->
-<div class="theme-toggler">
-    <div class="toggle-btn">
-        <i class="fas fa-cog"></i>
-    </div>
-
-
-<h3>choose mode</h3>
-
-<div class="theme-btn" style="background: #3867d6;"></div>
-<div class="theme-btn" style="background: #f7b731;"></div>
-<div class="theme-btn" style="background: #ff0033;"></div>
-<div class="theme-btn" style="background: #20bf6b;"></div>
-<div class="theme-btn" style="background: #fa8231;"></div>
-<div class="theme-btn" style="background: #fc427b;"></div>
-<div class="theme-btn" style="background: #00a8ff;"></div>
-<div class="theme-btn" style="background: #8e44ad;"></div>
-<div class="theme-btn" style="background: #efd8f9;"></div>
-
-</div>
-</div>
-
-
-
-
-<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
-
-
-   <script src="script.js"></script>
-
-
-
-
-</body>
-    </html>
-=======
                 </div>
         
                 <div class="box">
@@ -901,8 +565,8 @@ the unique and unmissable things to do in your destination.</p>
                     <h3>contact info</h3>
                     <a href="#"> <i class="fas fa-phone"></i> +8801688238801 </a>
                     <a href="#"> <i class="fas fa-phone"></i> +8801782546978 </a>
-                    <a href="#"> <i class="fas fa-envelope"></i> MStravelsite@gmail.com</a>
-                    <a href="#"> <i class="fas fa-envelope"></i> Mstravel@gmail.com</a>
+                    <a href="#"> <i class="fas fa-envelope"></i>MStravelsite@gmail.com </a>
+                    <a href="#"> <i class="fas fa-envelope"></i> MStravelsite@gmail.com </a>
                     <a href="#"> <i class="fas fa-map-marker-alt"></i> sylhet, bangladesh </a>
                 </div>
         
@@ -954,8 +618,21 @@ the unique and unmissable things to do in your destination.</p>
 
   
   <script src="script.js"></script>
+
+
+  <script>
+  function validateForm() {
+    var name = document.forms["bookForm"]["name"].value;
+    var email = document.forms["bookForm"]["email"].value;
+    var phone = document.forms["bookForm"]["phone"].value;
+    var address = document.forms["bookForm"]["address"].value;
+    var location = document.forms["bookForm"]["location"].value;
+    var guests = document.forms["bookForm"]["guests"].value;
+    var arrivals = document.forms["bookForm"]["arrivals"].value;
+    var leaving = document.forms["bookForm"]["leaving"].value;
+  }
+  </script>
 </body>
 </html>
 
 
->>>>>>> travelsite/main
