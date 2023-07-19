@@ -18,19 +18,22 @@ if(isset($_POST['send'])){
     $address = $_POST['address'];
     $location = $_POST['location'];
     $guests = $_POST['guests'];
+    // $guests = (int)$_POST['guests'];
     $arrivals = $_POST['arrivals'];
     $leaving = $_POST['leaving'];
 
 
-    $request = "insert into tripform(name, email, phone, address,location,guests,arrivals,leaving) values('$name','$email','$phone','$address','$location','$guests','$arrivals','$leaving')";
+    $request = "insert into tripform(name, email, phone, address,location,guests,arrivals,leaving)
+     values('$name','$email','$phone','$address','$location','$guests','$arrivals','$leaving')";
     // echo $request;
     // exit;
-    mysqli_query($connection,$request);
+    if(mysqli_query($connection,$request)){
+        header('location:index.php');
+        exit();
+    
 
-    header('location:index.php');
-
-   
 }else{
-    echo 'something went wrong please try again!';
+    echo 'Error: ' . mysqli_error($connection);
+}
 }
 ?>

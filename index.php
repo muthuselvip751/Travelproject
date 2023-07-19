@@ -616,9 +616,9 @@ the unique and unmissable things to do in your destination.</p>
          
    <!-- ============================script========================================= -->
    
-   
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
       <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
-      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+     
       <script src="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/js/toastr.min.js"></script>
 
   
@@ -626,6 +626,10 @@ the unique and unmissable things to do in your destination.</p>
 
 
   <script>
+    $(document).ready(function(){
+        // alert('hh');
+    });
+
    $(document).ready(function() {
       function validateForm() {
          let name = $("input[name='name']").val();
@@ -646,7 +650,9 @@ the unique and unmissable things to do in your destination.</p>
 
       $("#bookForm").submit(function(event) {
          event.preventDefault();
+         alert ('submit');
          if (validateForm()) {
+            alert ('validate');
             $.ajax({
                url: $(this).attr("action"),
                method: $(this).attr("method"),
