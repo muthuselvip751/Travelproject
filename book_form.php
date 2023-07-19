@@ -11,8 +11,6 @@ $dbname = "bookform";
 //  $dbname = "lanandan_will_notification";
 
 
-
-
 $name = $_POST['name'];
 $email = $_POST['email'];
 $phone = $_POST['phone'];

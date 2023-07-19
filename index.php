@@ -587,28 +587,7 @@ the unique and unmissable things to do in your destination.</p>
 
 <!---------------------------------------theme toggler ------------------------------->
 
-          <!-- <div class="theme-toggler">
-
-            <div class="toggle-btn">
-                <i class="fas fa-cog"></i>
-            </div>
-        
-            <h3>choose color</h3>
-        
-            <div class="buttons">
-                <div class="theme-btn" style="background: #3867d6;"></div>
-                <div class="theme-btn" style="background: #f7b731;"></div>
-                <div class="theme-btn" style="background: #ff0033;"></div>
-                <div class="theme-btn" style="background: #20bf6b;"></div>
-                <div class="theme-btn" style="background: #fa8231;"></div>
-                <div class="theme-btn" style="background: #FC427B;"></div>
-                <div class="theme-btn" style="background: #00a8ff;"></div>
-                <div class="theme-btn" style="background: #8e44ad;"></div>
-                <div class="theme-btn" style="background: #efd8f9;"></div>
-                
-            </div>
-        
-        </div> -->
+          
          
    <!-- ============================script========================================= -->
    
