@@ -1,9 +1,16 @@
 
 <?php
-$servername = "localhost";
-$username = "root";
-$password = "mypassword";
-$dbname = "bookform";
+// $servername = "localhost";
+// $username = "root";
+// $password = "mypassword";
+// $dbname = "bookform";
+
+ $servername = "mysql1006.mochahost.com";
+ $username = "lanandan_will_notification";
+ $password = "2{}A(90f_%F5";
+ $dbname = "lanandan_will_notification";
+
+
 
 
 $name = $_POST['name'];
@@ -26,7 +33,7 @@ if ($conn->connect_error) {
 }
 
 
-$sql = "INSERT INTO tripform (name, email, phone, address, location, guests, arrivals, leaving) VALUES ('$name', '$email', '$phone', '$address', '$location', '$guests', '$arrivals', '$leaving')";
+$sql = "INSERT INTO bookform (name, email, phone, address, location, guests, arrivals, leaving) VALUES ('$name', '$email', '$phone', '$address', '$location', '$guests', '$arrivals', '$leaving')";
 
 if ($conn->query($sql) === TRUE) {
     echo "Form submitted and data inserted into the database successfully.";
