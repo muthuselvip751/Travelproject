@@ -626,52 +626,45 @@ the unique and unmissable things to do in your destination.</p>
 
 
   <script>
-    $(document).ready(function(){
-        // alert('hh');
+    $(document).ready(function() {
+        $("#bookForm").submit(function(event) {
+            event.preventDefault();
+            if (validateForm()) {
+                $.ajax({
+                    url: $(this).attr("action"),
+                    method: $(this).attr("method"),
+                    data: $(this).serialize(),
+                    success: function(response) {
+                        toastr.success("Form submitted successfully");
+                        setTimeout(function() {
+                            window.location.href = "index.php";
+                        }, 3000);
+                    },
+                    error: function() {
+                        toastr.error("Something went wrong. Please try again later.");
+                    }
+                });
+            }
+        });
     });
 
-   $(document).ready(function() {
-      function validateForm() {
-         let name = $("input[name='name']").val();
-         let email = $("input[name='email']").val();
-         let phone = $("input[name='phone']").val();
-         let address = $("input[name='address']").val();
-         let location = $("input[name='location']").val();
-         let guests = $("input[name='guests']").val();
-         let arrivals = $("input[name='arrivals']").val();
-         let leaving = $("input[name='leaving']").val();
+    function validateForm() {
+        let name = $("input[name='name']").val();
+        let email = $("input[name='email']").val();
+        let phone = $("input[name='phone']").val();
+        let address = $("input[name='address']").val();
+        let location = $("input[name='location']").val();
+        let guests = $("input[name='guests']").val();
+        let arrivals = $("input[name='arrivals']").val();
+        let leaving = $("input[name='leaving']").val();
 
-         if (!name || !email || !phone || !address || !location || !guests || !arrivals || !leaving) {
+        if (!name || !email || !phone || !address || !location || !guests || !arrivals || !leaving) {
             toastr.error("Please fill in all fields");
             return false;
-         }
-         return true;
-      }
-
-      $("#bookForm").submit(function(event) {
-         event.preventDefault();
-         alert ('submit');
-         if (validateForm()) {
-            alert ('validate');
-            $.ajax({
-               url: $(this).attr("action"),
-               method: $(this).attr("method"),
-               data: $(this).serialize(),
-               success: function(response) {
-                  toastr.success("Form submitted successfully");
-                  setTimeout(function() {
-                     window.location.href = "index.php";
-                  }, 3000);
-               },
-               error: function() {
-                  toastr.error("Something went wrong. Please try again later.");
-               }
-            });
-         }
-      });
-   });
+        }
+        return true;
+    }
 </script>
-
 
 </body>
 </html>
