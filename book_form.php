@@ -29,28 +29,20 @@ if($connection == FALSE){
 }
 
 
+$sql = "INSERT INTO tripform (name, email, phone, address, location, guests, arrivals, leaving) VALUES ('$name', '$email', '$phone', '$address', '$location', '$guests', '$arrivals', '$leaving')";
+//    echo $sql;
+//      exit;
+// echo $request;
+if ($conn->query($sql) === TRUE) {
+    echo "Form submitted and data inserted into the database successfully.";
+} else {
+    echo "Error: " . $conn->error;
+}
+
+$conn->close();
+?>
+
 
   
 
-try{
-    $request = "insert into tripform(name, email, phone, address,location,guests,arrivals,leaving)
-     values('$name','$email','$phone','$address','$location','$guests','$arrivals','$leaving')";
-    // echo $request;
-    // exit;
-    if(mysqli_query($connection,$request)){
-        header('location:index.php');
-        exit();
-    
 
-}else{
-    throw new Exception(mysqli_error($connection));
-}
-}
-catch (Exception $e) {
-    $error_message = $e->getMessage();
-    echo 'Error: ' . $error_message;
-
-}
-}
-mysqli_close($connection);
-?>
