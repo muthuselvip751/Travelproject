@@ -489,8 +489,10 @@ the unique and unmissable things to do in your destination.</p>
 
             <h1 class="heading-title">book your trip!</h1>
             <!-- <form action="book_form.php" method="post" class="book-form"> -->
-            <form id="bookForm" action="book_form.php" method="post" class="book-form" 
-            onsubmit="return validateForm()">
+        
+    
+            <form id="bookForm" action="book_form.php" method="post" class="book-form">
+
               
                 <div class="flex">
                     <div class="inputBox">
@@ -615,23 +617,54 @@ the unique and unmissable things to do in your destination.</p>
    
    
       <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
-
+     
   
   <script src="script.js"></script>
 
-
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/js/toastr.min.js"></script>
   <script>
-  function validateForm() {
-    var name = document.forms["bookForm"]["name"].value;
-    var email = document.forms["bookForm"]["email"].value;
-    var phone = document.forms["bookForm"]["phone"].value;
-    var address = document.forms["bookForm"]["address"].value;
-    var location = document.forms["bookForm"]["location"].value;
-    var guests = document.forms["bookForm"]["guests"].value;
-    var arrivals = document.forms["bookForm"]["arrivals"].value;
-    var leaving = document.forms["bookForm"]["leaving"].value;
-  }
-  </script>
+   $(document).ready(function() {
+      function validateForm() {
+         let name = $("input[name='name']").val();
+         let email = $("input[name='email']").val();
+         let phone = $("input[name='phone']").val();
+         let address = $("input[name='address']").val();
+         let location = $("input[name='location']").val();
+         let guests = $("input[name='guests']").val();
+         let arrivals = $("input[name='arrivals']").val();
+         let leaving = $("input[name='leaving']").val();
+
+         if (!name || !email || !phone || !address || !location || !guests || !arrivals || !leaving) {
+            toastr.error("Please fill in all fields");
+            return false;
+         }
+         return true;
+      }
+
+      $("#bookForm").submit(function(event) {
+         event.preventDefault();
+         if (validateForm()) {
+            $.ajax({
+               url: $(this).attr("action"),
+               method: $(this).attr("method"),
+               data: $(this).serialize(),
+               success: function(response) {
+                  toastr.success("Form submitted successfully");
+                  setTimeout(function() {
+                     window.location.href = "index.php";
+                  }, 3000);
+               },
+               error: function() {
+                  toastr.error("Something went wrong. Please try again later.");
+               }
+            });
+         }
+      });
+   });
+</script>
+
+
 </body>
 </html>
 
