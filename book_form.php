@@ -1,9 +1,12 @@
 
 <?php
+ini_set('display_errors', 1);
+ini_set('display_startup_errors', 1);
+error_reporting(E_ALL);
 
-// $connection = mysqli_connect('mysql1006.mochahost.com','lanandan_will_notification', '2{}A(90f_%F5','lanandan_will_notification');
+//  $connection = mysqli_connect('mysql1006.mochahost.com','lanandan_will_notification', '2{}A(90f_%F5','lanandan_will_notification');
 
-$connection = mysqli_connect('localhost','root','mypassword','bookform');
+ $connection = mysqli_connect('localhost','root','mypassword','bookform');
 
 if($connection == FALSE){
     die("server not connected".mysqli_connect_error());
