@@ -483,58 +483,54 @@ the unique and unmissable things to do in your destination.</p>
 
 <!-- =========================================booking section==================================== -->
 
-       <section class="book" id="book">
-        <div class="heading" style="background: url(assets/header-bg-3.png) no-repeat">
-            <h1 class="heading"> book<span>now</span> </h1>
+<section class="book" id="book">
+    <div class="heading" style="background: url(assets/header-bg-3.png) no-repeat">
+        <h1 class="heading">book<span>now</span></h1>
+    </div>
+
+    <h1 class="heading-title">book your trip!</h1>
+    <form action="book_form.php" method="post" class="book-form" id="bookForm">
+
+        <div class="flex">
+            <div class="inputBox">
+                <span>name :</span>
+                <input type="text" placeholder="enter your name" name="name" required>
             </div>
+            <div class="inputBox">
+                <span>email :</span>
+                <input type="email" placeholder="enter your email" name="email">
+            </div>
+            <div class="inputBox">
+                <span>phone :</span>
+                <input type="number" placeholder="enter your number" name="phone" required>
+            </div>
+            <div class="inputBox">
+                <span>address :</span>
+                <input type="text" placeholder="enter your address" name="address" required>
+            </div>
+            <div class="inputBox">
+                <span>where to :</span>
+                <input type="text" placeholder="place you want to visit" name="location" required>
+            </div>
+            <div class="inputBox">
+                <span>how many :</span>
+                <input type="number" placeholder="number of guests" name="guests" required>
+            </div>
+            <div class="inputBox">
+                <span>arrivals :</span>
+                <input type="date" placeholder="arrivals" name="arrivals" required>
+            </div>
+            <div class="inputBox">
+                <span>leaving :</span>
+                <input type="date" placeholder="leaving" name="leaving" required>
+            </div>
+        </div>
 
-            <h1 class="heading-title">book your trip!</h1>
-            <!-- <form action="book_form.php" method="post" class="book-form"> -->
-        
-    
-            <form id="bookForm" action="book_form.php" method="post" class="book-form">
+        <input type="submit" value="submit" class="btn" name="send">
 
-              
-                <div class="flex">
-                    <div class="inputBox">
-                        <span>name :</span>
-                        <input type="text" placeholder="enter your name" name="name">
-                    </div>
-                    <div class="inputBox">
-                        <span>email :</span>
-                        <input type="email" placeholder="enter your email" name="email">
-                    </div>
-                    <div class="inputBox">
-                        <span>phone :</span>
-                        <input type="number" placeholder="enter your number" name="phone">
-                    </div>
-                    <div class="inputBox">
-                        <span>address :</span>
-                        <input type="text" placeholder="enter your address" name="address">
-                    </div>
-                    <div class="inputBox">
-                        <span>where to :</span>
-                        <input type="text" placeholder="place you want to visit" name="location">
-                    </div>
-                    <div class="inputBox">
-                        <span>how many :</span>
-                        <input type="number" placeholder="number of guests" name="guests">
-                    </div>
-                    <div class="inputBox">
-                        <span>arrivals :</span>
-                        <input type="date" placeholder="arrivals" name="arrivals">
-                    </div>
-                    <div class="inputBox">
-                        <span>leaving :</span>
-                        <input type="date" placeholder="leaving" name="leaving">
-                    </div>
-                </div>
+    </form>
 
-                <input type="submit" value="submit" class="btn" name="send">
-
-            </form>
-
-       </section>
+</section>
 
     
 <!-- =====================================footer section ============================================== -->
@@ -617,15 +613,13 @@ the unique and unmissable things to do in your destination.</p>
    <!-- ============================script========================================= -->
    
    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
-      <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
-     
-      <script src="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/js/toastr.min.js"></script>
-
-  
+  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/js/toastr.min.js"></script>
   <script src="script.js"></script>
 
 
-  <script>
+ 
+<script>
     $(document).ready(function() {
         $("#bookForm").submit(function(event) {
             event.preventDefault();
