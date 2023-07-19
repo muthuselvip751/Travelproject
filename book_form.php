@@ -16,6 +16,9 @@ $arrivals = $_POST['arrivals'];
 $leaving = $_POST['leaving'];
 
 
+// $connection = mysqli_connect('mysql1006.mochahost.com','lanandan_will_notification', '2{}A(90f_%F5','lanandan_will_notification');
+
+
 $conn = new mysqli($servername, $username, $password, $dbname);
 
 if ($conn->connect_error) {

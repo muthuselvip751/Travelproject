@@ -17,7 +17,7 @@
     
 <!--=================================================header section=========================================--->
 
-<header class="header">
+<header class="header"  style="background-color:#21382f">
 
     <a href="#" class="logo"><span>MS</span>travel</a>
 
