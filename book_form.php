@@ -1,10 +1,28 @@
 
 <?php
+$servername = "localhost";
+$username = "root";
+$password = "mypassword";
+$dbname = "bookform";
+
+
+
+$name = $_POST['name'];
+$email = $_POST['email'];
+$phone = $_POST['phone'];
+$address = $_POST['address'];
+$location = $_POST['location'];
+$guests = $_POST['guests'];
+// $guests = (int)$_POST['guests'];
+$arrivals = $_POST['arrivals'];
+$leaving = $_POST['leaving'];
 
 
 //  $connection = mysqli_connect('mysql1006.mochahost.com','lanandan_will_notification', '2{}A(90f_%F5','lanandan_will_notification');
 
- $connection = mysqli_connect('localhost','root','mypassword','bookform');
+
+$conn = new mysqli($servername, $username, $password, $dbname);
+
 
 if($connection == FALSE){
     die("server not connected".mysqli_connect_error());
@@ -12,16 +30,7 @@ if($connection == FALSE){
 
 
 
-if(isset($_POST['send'])){
-    $name = $_POST['name'];
-    $email = $_POST['email'];
-    $phone = $_POST['phone'];
-    $address = $_POST['address'];
-    $location = $_POST['location'];
-    $guests = $_POST['guests'];
-    // $guests = (int)$_POST['guests'];
-    $arrivals = $_POST['arrivals'];
-    $leaving = $_POST['leaving'];
+  
 
 try{
     $request = "insert into tripform(name, email, phone, address,location,guests,arrivals,leaving)
