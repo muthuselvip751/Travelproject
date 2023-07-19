@@ -22,7 +22,7 @@ if(isset($_POST['send'])){
     $arrivals = $_POST['arrivals'];
     $leaving = $_POST['leaving'];
 
-
+try{
     $request = "insert into tripform(name, email, phone, address,location,guests,arrivals,leaving)
      values('$name','$email','$phone','$address','$location','$guests','$arrivals','$leaving')";
     // echo $request;
@@ -33,7 +33,14 @@ if(isset($_POST['send'])){
     
 
 }else{
-    echo 'Error: ' . mysqli_error($connection);
+    throw new Exception(mysqli_error($connection));
 }
 }
+catch (Exception $e) {
+    $error_message = $e->getMessage();
+    echo 'Error: ' . $error_message;
+
+}
+}
+mysqli_close($connection);
 ?>
