@@ -87,6 +87,20 @@ else {
 </body>
 </html>
 
+</php 
+}
+else {
+    echo "data not found.";
+}
+&conn->close();
+}
+else{
+    echo "invalid request"
+}
+}
+?>
+
+
 
 
 
