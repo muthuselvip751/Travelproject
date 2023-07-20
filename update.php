@@ -20,21 +20,20 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $guests = $_POST["guests"];
     $arrivals = $_POST["arrivals"];
     $leaving = $_POST["leaving"];
-// connection
+
     $sql = "UPDATE tripform
-    SET name='$name', email='$email', phone='$phone', address='$address', location='$location',
-    guests='$guests', arrivals='$arrivals', leaving='$leaving'
-    WHERE id='$id'";
+            SET name='$name', email='$email', phone='$phone', address='$address', location='$location',
+            guests='$guests', arrivals='$arrivals', leaving='$leaving'
+            WHERE id='$id'";
 
-if ($conn->query($sql) === TRUE) {
-header("Location: display.php"); 
+    if ($conn->query($sql) === TRUE) {
+        header("Location: display.php"); 
+    } else {
+        echo "Error updating record: " . $conn->error;
+    }
+
+    $conn->close();
 } else {
-echo "Error updating record: " . $conn->error;
-}
-
-$conn->close();
-}
-else {
     if (isset($_GET["id"])) {
         $id = $_GET["id"];
 
@@ -49,19 +48,20 @@ else {
 
         if ($result->num_rows == 1) {
             $row = $result->fetch_assoc();
-     ?>       
-        
-            <!DOCTYPE html>
-            <html lang="en">
-            <head>
-                <meta charset="UTF-8">
-                <meta http-equiv="X-UA-Compatible" content="IE=edge">
-                <meta name="viewport" content="width=device-width, initial-scale=1.0">
-                <title>Update Data</title>
-                </head>
+         
+?>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Update Data</title>
+   
+</head>
 <body>
 
-    <h1>Update Record</h1>
+    <h1>Update Data</h1>
 
     <form method="post">
         <input type="hidden" name="id" value="<?php echo $row["id"]; ?>">
@@ -86,37 +86,15 @@ else {
 
 </body>
 </html>
+<?php
+        } else {
+            echo "Record not found.";
+        }
 
-</php 
-}
-else {
-    echo "data not found.";
-}
-&conn->close();
-}
-else{
-    echo "invalid request"
-}
+        $conn->close();
+    } else {
+        echo "Invalid request.";
+    }
 }
 ?>
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-        }
-        }
-        }              
