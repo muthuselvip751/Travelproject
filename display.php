@@ -5,6 +5,81 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Display Data</title>
+    <style>
+        
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+th, td {
+    padding: 10px;
+    border-bottom: 1px solid #ccc;
+}
+
+th {
+    background-color: #f2f2f2;
+    text-align: left;
+}
+
+tbody tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+td[colspan='8'] {
+    text-align: center;
+    padding: 20px;
+    font-style: italic;
+    color: #888;
+}
+td:last-child {
+    text-align: center;
+}
+
+
+td:last-child a {
+    display: inline-block;
+    padding: 5px 10px;
+    margin: 5px;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 3px;
+}
+
+
+td:last-child a:nth-child(1) {
+    background-color: #007bff;
+}
+
+td:last-child a:nth-child(2) {
+    background-color: #dc3545;
+}
+
+
+td:last-child a:hover {
+    background-color: #6c757d;
+}
+        </style>
     </head>
 <body>
 
@@ -67,10 +142,10 @@ if ($result->num_rows > 0) {
 
 $conn->close();
 ?>
-</tbody>
-</table>
+    </tbody>
+    </table>
 
 
 
-</body>
-</html>
+    </body>
+          </html>
