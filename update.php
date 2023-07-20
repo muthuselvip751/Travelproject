@@ -57,6 +57,48 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Update Data</title>
+    <style>
+        body{
+            font-family:Arial, sans-serif;
+            line-height:1.6;
+            margin:0;
+        }
+        .container{
+            max-width:60rem;
+            padding:20px;
+        }
+        h1{
+            text-align:center;
+            margin-bottom:20px;
+        }
+form{
+    max-width:600px;
+    margin:0 auto;
+}
+label{
+    display:block;
+    margin-bottom:5px;
+}
+input{
+    width:100%;
+    border:2px solid black;
+    padding-bottom:10px;
+    border-radius:5px;
+}
+button{
+    padding:100px;
+    background-color:#007BFF;
+    color:#fff;
+    border:none;
+    border-radius:5px;
+    cursor:pointer;
+}
+button:hover{
+    background-color:#0056b3;
+}
+
+
+    </style>
    
 </head>
 <body>
