@@ -148,19 +148,20 @@ td:last-child a:hover {
             </tr>
         </thead>
         <tbody>
-            <?php
-            // $servername = "localhost";
+            
+            <!-- // $servername = "localhost";
             // $username = "root";
             // $password = "mypassword";
-            // $dbname = "bookform";
+            // $dbname = "bookform";  -->
 
-       
+            <?php
+            require_once "dbconfig.php";
 
 
-          $servername = "mysql1006.mochahost.com";
-          $username = "lanandan_will_notification";
-          $password = "2{}A(90f_%F5";
-          $dbname = "lanandan_will_notification";
+        //   $servername = "mysql1006.mochahost.com";
+        //   $username = "lanandan_will_notification";
+        //   $password = "2{}A(90f_%F5";
+        //   $dbname = "lanandan_will_notification";
 
 
 
@@ -173,9 +174,9 @@ td:last-child a:hover {
 
 //==================================== Fetch data from the database============================
 
-            // $sql = "SELECT * FROM tripform";
+            $sql = "SELECT * FROM tripform";
 
-            $sql = "SELECT * FROM bookform";
+            // $sql = "SELECT * FROM bookform";
             
             $result = $conn->query($sql);
 

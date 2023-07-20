@@ -1,14 +1,5 @@
 <?php
-// $servername = "localhost";
-// $username = "root";
-// $password = "mypassword";
-// $dbname = "bookform";
-
-
-$servername = "mysql1006.mochahost.com";
-$username = "lanandan_will_notification";
-$password = "2{}A(90f_%F5";
-$dbname = "lanandan_will_notification";
+require_once "dbconfig.php";
 
 
 
@@ -29,16 +20,16 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $arrivals = $_POST["arrivals"];
     $leaving = $_POST["leaving"];
 
-    // $sql = "UPDATE tripform
-    //         SET name='$name', email='$email', phone='$phone', address='$address', location='$location',
-    //         guests='$guests', arrivals='$arrivals', leaving='$leaving'
-    //         WHERE id='$id'";
-
-
-    $sql = "UPDATE bookform
+    $sql = "UPDATE tripform
             SET name='$name', email='$email', phone='$phone', address='$address', location='$location',
             guests='$guests', arrivals='$arrivals', leaving='$leaving'
             WHERE id='$id'";
+
+
+    // $sql = "UPDATE bookform
+    //         SET name='$name', email='$email', phone='$phone', address='$address', location='$location',
+    //         guests='$guests', arrivals='$arrivals', leaving='$leaving'
+    //         WHERE id='$id'";
 
     if ($conn->query($sql) === TRUE) {
         header("Location: display.php"); 
@@ -57,8 +48,8 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             die("Connection failed: " . $conn->connect_error);
         }
 
-        // $sql = "SELECT * FROM tripform WHERE id='$id'";
-        $sql = "SELECT * FROM bookform WHERE id='$id'";
+         $sql = "SELECT * FROM tripform WHERE id='$id'";
+        // $sql = "SELECT * FROM bookform WHERE id='$id'";
         $result = $conn->query($sql);
 
         if ($result->num_rows == 1) {
