@@ -6,12 +6,6 @@ menu.onclick = () =>{
   navbar.classList.toggle('active');
 }
 
-
-// ============================theme toggler======================================================
-
-
-
-
 // ================================image slide===================================================
 var swiper = new Swiper(".home-slider", {
   effect: "coverflow",
