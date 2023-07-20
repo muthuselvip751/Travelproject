@@ -46,11 +46,14 @@ section{
     text-transform: uppercase;
     font-size: 4rem;
 }
+<<<<<<< HEAD
+=======
 .heading span{
     color:#3867d6;
     text-transform: uppercase;
 }
 
+>>>>>>> travelsite/main
 
 .btn{
     margin-top: 1rem;
@@ -67,7 +70,11 @@ section{
 .btn:hover{
     background:#3867d6;
 }
+<<<<<<< HEAD
+
+=======
 /* -----------------------------------------header------------------------------------------------- */
+>>>>>>> travelsite/main
 .header{
     position: fixed;
     top:0; 
@@ -162,7 +169,11 @@ section{
     border-radius: 50%;
     font-size: 2.5rem;
     background:#20ddeb;
+<<<<<<< HEAD
+    color:#fff;
+=======
     color:#ffffff;
+>>>>>>> travelsite/main
 }
 
 .service .box-container .box h3{
@@ -172,6 +183,16 @@ section{
 }
 
 .service .box-container .box p{
+<<<<<<< HEAD
+    font-size: 1.4rem;
+    color:#eee;
+    line-height: 1.8;
+}
+.service .heading span{
+    /* border:2px solid red; */
+    color:blue;
+}
+=======
     font-size: 1.5rem;
     color:#ffffff;
     line-height: 1.8;
@@ -180,6 +201,7 @@ section{
     /* border:2px solid red; */
     /* color:blue;
 } */ 
+>>>>>>> travelsite/main
 
 
 /* ---------------------------about-------------------------------------------------- */
@@ -208,6 +230,16 @@ section{
 }
 .about .row .content p{
     font-size: 1.5rem;
+<<<<<<< HEAD
+    color: #817878;
+    padding: 1rem 0;
+    line-height: 2;
+}
+.about .heading span{
+    /* border:2px solid red; */
+    color:blue;
+}
+=======
     color:black;
     padding: 1rem 0;
     line-height: 2;
@@ -216,6 +248,7 @@ section{
     /* border:2px solid red; */
     /* color:blue;
 }  */
+>>>>>>> travelsite/main
 
 /* --------------------------------------GALLERY------------------------------------------ */
 .gallery .box-container{
@@ -224,10 +257,17 @@ section{
     gap:1.5rem;
 
 }
+<<<<<<< HEAD
+.gallery .heading span{
+    /* border:2px solid red; */
+    color:blue;
+}
+=======
 /* .gallery .heading span{
     /* border:2px solid red; */
     /* color:blue;
 } */ 
+>>>>>>> travelsite/main
 .gallery .box-container .box{
     position: relative;
     border: 1rem solid #333;
@@ -299,10 +339,17 @@ section{
     background: #fff;
     display: none;
  }
+<<<<<<< HEAD
+ .package .heading span{
+    /* border:2px solid red; */
+    color:blue;
+}
+=======
  /* .package .heading span{
     /* border:2px solid red; */
     /* color:blue;
 }  */
+>>>>>>> travelsite/main
  .package .box-container .box:nth-child(1),
  .package .box-container .box:nth-child(2),
  .package .box-container .box:nth-child(3),
@@ -342,8 +389,13 @@ section{
  }
  
  .package .box-container .box .content p{
+<<<<<<< HEAD
+    font-size: 1.5rem;
+    color:#777;
+=======
     font-size: 1.7rem;
     color:black;
+>>>>>>> travelsite/main
     line-height: 2;
     padding:1rem 0;
  }
@@ -360,6 +412,12 @@ section{
     padding: 2rem;
     position: relative;
  }
+<<<<<<< HEAD
+ .cliendreviews .heading span{
+    /* border:2px solid red; */
+    color:blue;
+}
+=======
  /* .cliendreviews .heading span{ */
     /* border:2px solid red; */
     /* color:blue;
@@ -370,6 +428,7 @@ section{
     color: var(--main-color);
     font-size: 5rem;
  } */
+>>>>>>> travelsite/main
 
  .cliendreviews .box .user{
     display: flex;
@@ -393,6 +452,21 @@ section{
  } 
  .cliendreviews .box p{
     line-height: 2;
+<<<<<<< HEAD
+    color: #eee;
+    padding: .5rem 0;
+    font-size: 1.6rem;
+ }
+
+ /* ---------------------------------------------- book form----------------------------------------- */
+ .book .heading{
+    /* border:2px solid red; */
+    background: url(assets/header-bg-2.png) no-repeat;
+    padding:0;
+    
+ }
+ 
+=======
     color: #ffffff;
     padding: .5rem 0;
     font-size: 1.8rem;
@@ -406,6 +480,7 @@ section{
     
  }/
   */
+>>>>>>> travelsite/main
  .book .heading-title{
     color: #0821fd;
     text-align: center;
@@ -413,10 +488,17 @@ section{
     /* border:2px solid black; */
     background-color:lightgray;
  }
+<<<<<<< HEAD
+ .book .heading span{
+    /* border:2px solid red; */
+    color:blue;
+}
+=======
   /* .book .heading span{
     /* border:2px solid red; */
     /* color:blue; */
 /* } */
+>>>>>>> travelsite/main
  .book .book-form{
     padding: 2rem;
     background: gray;
@@ -457,7 +539,11 @@ section{
  /* -----------------------------footer------------------------------------------------------------- */
 
  .footer{
+<<<<<<< HEAD
+    background:#111;
+=======
     background:#030303;
+>>>>>>> travelsite/main
 }
 
 .footer .box-container{
@@ -469,33 +555,54 @@ section{
 .footer .box-container .box h3{
     font-size: 2.5rem;
     padding:1rem 0;
+<<<<<<< HEAD
+    color:#fff;
+=======
     color:#ffffff;
+>>>>>>> travelsite/main
 }
 
 .footer .box-container .box a{
     display: block;
+<<<<<<< HEAD
+    font-size: 1.5rem;
+    padding:1rem 0;
+    color:#eee;
+=======
     font-size: 1.8rem;
     padding:1rem 0;
     color:white;
    
+>>>>>>> travelsite/main
 }
 
 .footer .box-container .box a i{
     padding-right: .5rem;
      color:#3867d6;
+<<<<<<< HEAD
+=======
      
+>>>>>>> travelsite/main
 }
 
 .footer .box-container .box a:hover i{
     padding-right: 1.5rem;
+<<<<<<< HEAD
+    color:#fff;
+=======
     color:#ffffff;
    
+>>>>>>> travelsite/main
 }
 
 .footer .credit{
     text-align: center;
     border-top: .1rem solid #222;
+<<<<<<< HEAD
+    color:#fff;
+=======
     color:#ffffff;
+>>>>>>> travelsite/main
     padding:2rem;
     padding-top: 2.5rem;
     margin-top: 1rem;
@@ -511,6 +618,71 @@ section{
 
 /*------------------------------------------ theme toggle---------------------------------------------- */
 
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+.theme-toggler{
+=======
+/* .theme-toggler{
+>>>>>>> travelsite/main
+    position:fixed;
+    top:10rem;
+    right:-20rem;
+    background:#333;
+    z-index:1000;
+    width:20rem;
+    text-align:center;
+}
+.theme-toggler .active{
+    right:0px;
+    left:10px;
+}
+.theme-toggle h3{
+    color:#fff;
+    padding:1 rem 0;
+    font-size:2rem;
+}
+.theme-toggler .buttons{
+    display:flex;
+    justify-content:center;
+    flex-wrap:wrap;
+    gap:1rem;
+    padding:1rem;
+}
+.theme-toggler .buttons .theme-btn{
+    height:5rem;
+    width:5rem;
+    border-radius:50%;
+    cursor:pointer;
+    }
+.theme-toggler .toggle-btn{
+    position:absolute;
+    top:0;
+    left:-5.9rem;
+    padding:1.3rem 1.5rem;
+    background:#333;
+    cursor:pointer;
+}
+.theme-toggler .toggle-btn i{
+    color:#fff;
+    font-size:3rem;
+    animation:spin 4s linear infinites;
+}
+
+
+
+
+@keyframes spin{
+    0%{
+        transform:rotate(360deg);
+    }
+<<<<<<< HEAD
+}
+=======
+} */
+>>>>>>> travelsite/main
+
+>>>>>>> origin/main
 
 
 
