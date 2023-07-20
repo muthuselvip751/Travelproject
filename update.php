@@ -61,11 +61,14 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         body{
             font-family:Arial, sans-serif;
             line-height:1.6;
+            padding:0;
             margin:0;
         }
         .container{
-            max-width:60rem;
+            max-width:960px;
             padding:20px;
+            margin:0 auto;
+            /* border:2px solid red; */
         }
         h1{
             text-align:center;
@@ -74,27 +77,56 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 form{
     max-width:600px;
     margin:0 auto;
+    /* border:2px solid red; */
+    background-color:gray;
+    
 }
 label{
     display:block;
     margin-bottom:5px;
 }
 input{
-    width:100%;
+    width:95%;
     border:2px solid black;
     padding-bottom:10px;
     border-radius:5px;
+    padding:10px;
 }
 button{
-    padding:100px;
+    padding:10px 20px;
     background-color:#007BFF;
     color:#fff;
     border:none;
     border-radius:5px;
     cursor:pointer;
+/* border:2px solid red; */
+top:0;
+bottom:10px;
+margin-top:20px;
+margin-left:250px;
 }
 button:hover{
     background-color:#0056b3;
+}
+/* media queries */
+@media (max-width:768px){
+    form{
+        font-size:14px;
+    }
+    input{
+        padding:8px;
+    }
+    button{
+        padding:8px 16px;
+    }
+}
+@media (max-width:576px){
+    form{
+        font-size:12px;
+    }
+    input{
+        padding:6px;
+    }
 }
 
 
