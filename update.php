@@ -34,4 +34,59 @@ echo "Error updating record: " . $conn->error;
 
 $conn->close();
 }
-?>
+else {
+    if (isset($_GET["id"])) {
+        $id = $_GET["id"];
+
+        $conn = new mysqli($servername, $username, $password, $dbname);
+
+        if ($conn->connect_error) {
+            die("Connection failed: " . $conn->connect_error);
+        }
+
+        $sql = "SELECT * FROM tripform WHERE id='$id'";
+        $result = $conn->query($sql);
+
+        if ($result->num_rows == 1) {
+            $row = $result->fetch_assoc();
+     ?>       
+        
+            <!DOCTYPE html>
+            <html lang="en">
+            <head>
+                <meta charset="UTF-8">
+                <meta http-equiv="X-UA-Compatible" content="IE=edge">
+                <meta name="viewport" content="width=device-width, initial-scale=1.0">
+                <title>Update Data</title>
+             <head>
+             </head>
+<body>
+<h1>Update data</h1>
+<form method="post">
+
+<input type="hidden" name="id" value="<?php echo $row["id"]; ?>">
+</form>
+
+
+</body> 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        }
+        }
+        }              
