@@ -582,17 +582,6 @@ the unique and unmissable things to do in your destination.</p>
             <div class="credit"> created by <span>MS TRAVEL</span> | all rights reserved 2023 </div>
         
         </section>
-<<<<<<< HEAD
-                    
-=======
-           
-    
-
-<!---------------------------------------theme toggler ------------------------------->
-
-          
-         
->>>>>>> cfdadae505ad27d82e26a7a134ca2e4499207a9d
    <!-- ============================script========================================= -->
    
    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
@@ -614,7 +603,7 @@ the unique and unmissable things to do in your destination.</p>
                     success: function(response) {
                         toastr.success("Form submitted successfully");
                         setTimeout(function() {
-                            window.location.href = "index.php";
+                            window.location.href = "display.php";
                         }, 3000);
                     },
                     error: function() {

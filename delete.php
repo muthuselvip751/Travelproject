@@ -1,31 +1,28 @@
 <?php
-   $servername = "localhost";
-   $username = "root";
-   $password = "mypassword";
-   $dbname = "bookform";
+$servername = "localhost";
+$username = "root";
+$password = "mypassword";
+$dbname = "bookform";
 
+if (isset($_GET["id"])) {
+    $id = $_GET["id"];
 
+    $conn = new mysqli($servername, $username, $password, $dbname);
 
-if(isset($_GET["id"])) {
-    $id=$_GET["id"];
-
-    $conn=new mysqli($servername, $username,$password,$dbname);
-
-    if($conn->connect_error){
-        die("Connection failed: ". $conn->connect_error);
+    if ($conn->connect_error) {
+        die("Connection failed: " . $conn->connect_error);
     }
-    $sql="DELETE FROM tripform WHERE id='$id'";
-    if($conn->query(sql)===TRUE) {
-        header("Location: display.php");
+
+    $sql = "DELETE FROM tripform WHERE id='$id'";
+
+    if ($conn->query($sql) === TRUE) {
+        header("Location: display.php"); 
+    } else {
+        echo "Error deleting record: " . $conn->error;
     }
-    else{
-        echo "error delete data: ". $conn->error;
-    }
+
     $conn->close();
-}else{
+} else {
     echo "Invalid request.";
 }
-
-
-
 ?>
