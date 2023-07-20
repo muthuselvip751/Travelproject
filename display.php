@@ -193,6 +193,13 @@ td:last-child a:hover {
         </tbody>
     </table>
 
+    <div style="text-align: center; margin-top: 20px;">
+        <a href="index.php" 
+        style="padding: 10px 20px; background-color: #28a745; color: #fff; text-decoration: none; 
+        border-radius: 5px;">
+        Back to Book Form</a>
+    </div>
+    
     
 
 </body>
