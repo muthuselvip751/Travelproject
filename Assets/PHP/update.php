@@ -1,5 +1,5 @@
 <?php
-require_once "dbconfig.php";
+require_once "./Assets/PHP/dbconfig.php";
 
 
 
@@ -32,7 +32,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     //         WHERE id='$id'";
 
     if ($conn->query($sql) === TRUE) {
-        header("Location: display.php"); 
+        header("Location: ./Assets/PHP/display.php"); 
     } else {
         echo "Error updating record: " . $conn->error;
     }
@@ -63,80 +63,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Update Data</title>
-    <style>
-        body{
-            font-family:Arial, sans-serif;
-            line-height:1.6;
-            padding:0;
-            margin:0;
-        }
-        .container{
-            max-width:960px;
-            padding:20px;
-            margin:0 auto;
-            /* border:2px solid red; */
-        }
-        h1{
-            text-align:center;
-            margin-bottom:20px;
-        }
-form{
-    max-width:600px;
-    margin:0 auto;
-    /* border:2px solid red; */
-    background-color:gray;
-    
-}
-label{
-    display:block;
-    margin-bottom:5px;
-}
-input{
-    width:95%;
-    border:2px solid black;
-    padding-bottom:10px;
-    border-radius:5px;
-    padding:10px;
-}
-button{
-    padding:10px 20px;
-    background-color:#007BFF;
-    color:#fff;
-    border:none;
-    border-radius:5px;
-    cursor:pointer;
-/* border:2px solid red; */
-top:0;
-bottom:10px;
-margin-top:20px;
-margin-left:250px;
-}
-button:hover{
-    background-color:#0056b3;
-}
-/* media queries */
-@media (max-width:768px){
-    form{
-        font-size:14px;
-    }
-    input{
-        padding:8px;
-    }
-    button{
-        padding:8px 16px;
-    }
-}
-@media (max-width:576px){
-    form{
-        font-size:12px;
-    }
-    input{
-        padding:6px;
-    }
-}
-
-
-    </style>
+    <link rel="stylesheet" href="./Assets/CSS/update.css">
    
 </head>
 <body>

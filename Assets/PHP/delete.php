@@ -1,6 +1,6 @@
 <?php
 
-require_once "dbconfig.php";
+require_once "./Assets/PHP/dbconfig.php";
 
 
 
@@ -18,7 +18,7 @@ if (isset($_GET["id"])) {
     //$sql = "DELETE FROM bookform WHERE id='$id'";
 
     if ($conn->query($sql) === TRUE) {
-        header("Location: display.php"); 
+        header("Location: ./Assets/PHP/display.php"); 
     } else {
         echo "Error deleting record: " . $conn->error;
     }

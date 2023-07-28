@@ -10,7 +10,7 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/css/toastr.min.css">
 
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="./Assets/CSS/style.css">
 
 </head>
 <body>
@@ -48,12 +48,12 @@
 
     <div class="swiper-container home-slider">
         <div class="swiper-wrapper">
-            <div class="swiper-slide"><img src="assets/slide-1.jpg" alt=""></div>
-            <div class="swiper-slide"><img src="assets/slide-2.jpg" alt=""></div>
-            <div class="swiper-slide"><img src="assets/slide-3.jpg" alt=""></div>
-            <div class="swiper-slide"><img src="assets/slide-4.jpg" alt=""></div>
-            <div class="swiper-slide"><img src="assets/slide-5.jpg" alt=""></div>
-            <div class="swiper-slide"><img src="assets/slide-6.jpg" alt=""></div>
+            <div class="swiper-slide"><img src="./Assets/images/slide-1.jpg" alt=""></div>
+            <div class="swiper-slide"><img src="./Assets/images/slide-2.jpg" alt=""></div>
+            <div class="swiper-slide"><img src="./Assets/images/slide-3.jpg" alt=""></div>
+            <div class="swiper-slide"><img src="./Assets/images/slide-4.jpg" alt=""></div>
+            <div class="swiper-slide"><img src="./Assets/images/slide-5.jpg" alt=""></div>
+            <div class="swiper-slide"><img src="./Assets/images/slide-6.jpg" alt=""></div>
         </div>
     </div>
 
@@ -126,7 +126,7 @@
         <div class="row">
 
             <div class="image">
-                <img src="assets/about-img.jpg" alt="">
+                <img src="./Assets/images/about-img.jpg" alt="">
             </div>
             
             <div class="content">
@@ -155,7 +155,7 @@ the unique and unmissable things to do in your destination.</p>
     <div class="box-container">
 
         <div class="box">
-        <img src="assets/img1.jpg" alt="">
+        <img src="./Assets/img1.jpg" alt="">
             <h3 class="title">MS gallery</h3>
             <div class="icons">
                 <a href="#" class="fas fa-heart"></a>
@@ -165,7 +165,7 @@ the unique and unmissable things to do in your destination.</p>
         </div>
 
         <div class="box">
-        <img src="assets/img2.jpg" alt="">
+        <img src="./Assets/images/img2.jpg" alt="">
             <h3 class="title">MS gallery</h3>
             <div class="icons">
                 <a href="#" class="fas fa-heart"></a>
@@ -175,7 +175,7 @@ the unique and unmissable things to do in your destination.</p>
         </div>
 
         <div class="box">
-        <img src="assets/img3.jpg" alt="">
+        <img src="./Assets/images/img3.jpg" alt="">
             <h3 class="title">MS gallery</h3>
             <div class="icons">
                 <a href="#" class="fas fa-heart"></a>
@@ -185,7 +185,7 @@ the unique and unmissable things to do in your destination.</p>
         </div>
 
         <div class="box">
-        <img src="assets/img4.jpg" alt="">
+        <img src="./Assets/images/img4.jpg" alt="">
             <h3 class="title">MS gallery</h3>
             <div class="icons">
                 <a href="#" class="fas fa-heart"></a>
@@ -489,7 +489,7 @@ the unique and unmissable things to do in your destination.</p>
     </div>
 
     <h1 class="heading-title">book your trip!</h1>
-    <form action="book_form.php" method="post" class="book-form" id="bookForm">
+    <form action="./Assets/PHP/book_form.php" method="post" class="book-form" id="bookForm">
 
         <div class="flex">
             <div class="inputBox">
@@ -587,7 +587,7 @@ the unique and unmissable things to do in your destination.</p>
    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
   <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
    <script src="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/js/toastr.min.js"></script>
-  <script src="script.js"></script>
+   <script src="./Assets/JS/script.js"></script>
 
 
  
@@ -603,7 +603,7 @@ the unique and unmissable things to do in your destination.</p>
                     success: function(response) {
                         toastr.success("Form submitted successfully");
                         setTimeout(function() {
-                            window.location.href = "display.php";
+                            window.location.href = "./Assets/PHP/display.php";
                         }, 3000);
                     },
                     error: function() {
